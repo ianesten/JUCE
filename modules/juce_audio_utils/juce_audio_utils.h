@@ -84,5 +84,6 @@
 #include "gui/juce_BluetoothMidiDevicePairingDialogue.h"
 #include "players/juce_SoundPlayer.h"
 #include "players/juce_AudioProcessorPlayer.h"
+#include "players/juce_TextToSpeech.h"
 #include "audio_cd/juce_AudioCDBurner.h"
 #include "audio_cd/juce_AudioCDReader.h"

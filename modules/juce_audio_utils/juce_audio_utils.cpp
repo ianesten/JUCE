@@ -62,10 +62,12 @@
 #include "gui/juce_AudioAppComponent.cpp"
 #include "players/juce_SoundPlayer.cpp"
 #include "players/juce_AudioProcessorPlayer.cpp"
+#include "players/juce_TextToSpeech.cpp"
 #include "audio_cd/juce_AudioCDReader.cpp"
 
 #if JUCE_MAC
  #include "native/juce_mac_BluetoothMidiDevicePairingDialogue.mm"
+ #include "native/juce_mac_TextToSpeech.mm"
 
  #if JUCE_USE_CDREADER
   #include "native/juce_mac_AudioCDReader.mm"
@@ -77,9 +79,11 @@
 
 #elif JUCE_IOS
  #include "native/juce_ios_BluetoothMidiDevicePairingDialogue.mm"
+ #include "native/juce_ios_TextToSpeech.mm"
 
 #elif JUCE_ANDROID
  #include "native/juce_android_BluetoothMidiDevicePairingDialogue.cpp"
+ #include "native/juce_android_TextToSpeech.cpp"
 
 #elif JUCE_LINUX
  #if JUCE_USE_CDREADER
@@ -90,6 +94,7 @@
 
 #elif JUCE_WINDOWS
  #include "native/juce_win_BluetoothMidiDevicePairingDialogue.cpp"
+ #include "native/juce_win_TextToSpeech.cpp"
 
  #if JUCE_USE_CDREADER
   #include "native/juce_win32_AudioCDReader.cpp"
